@@ -241,11 +241,9 @@
 	</style>
 </head>
 <body>
-	<div class="card {{#if no_data}}card--no-data {{/if}}center">
+	<div class="card center">
 		<div class="main-image"></div>
-		{{#if no_data}}
-			<div class="app-icon">&nbsp;</div>
-		{{/if}}
+		<div class="app-icon">&nbsp;</div>
 		<div id="content-container">
 			<div class="app-title text-bold">Easily Find and share Device Info</div>
 			<div class="card-title text-light">Branch - Device ID Finder</div>
@@ -254,11 +252,9 @@
 		<div class="input-wrapper">
 			<div class="input-container">
 				<form class="form-get-the-app">
-					{{#if app.og_image_url}}{{#unless no_data}}
-							<div class="app-icon">&nbsp;</div>
-						{{/unless}}{{/if}}
+					<div class="app-icon">&nbsp;</div>
 					<a href="https://deviceidfinder.app.link/kScUDgC2Jdb"
-						class="cta-button text-light{{#unless app.og_image_url}} cta-button--no-app-icon{{/unless}}{{#if no_data}} cta-button--no-app-icon{{/if}}">{{#if link_data.cta_text_localized}}{{link_data.cta_text_localized}}{{else}}Get The App{{/if}}</a>
+						class="cta-button text-light cta-button--no-app-icon">Get The App</a>
 				</form>
 			</div>
 		</div>
