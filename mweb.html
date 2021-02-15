@@ -289,16 +289,5 @@
 			}
 		);
 	</script>
-<script type="text/javascript">
-function validateProtocol(url){
-   var parser = document.createElement("a");
-   parser.href = url;
-   var protocol = parser.protocol.toLowerCase();
-   if ([ "javascript:", "vbscript:", "data:", "ftp:", ":", " "].indexOf(protocol) < 0) {
-      return url;}
-   return null;
-}
-window.onload = function() {window.top.location = validateProtocol("branchsters://open?link_click_id=865246722386278338");};
-</script>
 </body>
 </html>
