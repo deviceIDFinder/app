@@ -158,6 +158,8 @@
 	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '747067972902023');
 	fbq('track', 'PageView');
+	var c=fbq('trackCustom', 'ViewItemsFBCustom');
+	console.log(c);
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=747067972902023&ev=PageView&noscript=1"
@@ -199,6 +201,8 @@
 				console.log(err);
 			}
 		);
+		
+	
 	</script>
 	<body>
 </html>
