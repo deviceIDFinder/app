@@ -36,8 +36,12 @@
 	t.src=v;s=b.getElementsByTagName(e)[0];
 	s.parentNode.insertBefore(t,s)}(window, document,'script',
 	'https://connect.facebook.net/en_US/fbevents.js');
-	fbq('init', '747067972902023');
+	fbq('init', '1080028589154852');
+	fbq('track', 'PageView');
 	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1080028589154852&ev=PageView&noscript=1"
+	/></noscript>
 	<!-- PageView -->
 	<script>
 	branch.logEvent(
@@ -74,9 +78,11 @@
 	</div>
 	<script>
 		document.getElementById("get-app-cta-button").onclick = function () {
+			var transaction_id = (new Date()).getTime();
 			var event_and_custom_data = {
 				"description": "CTA button clicked",
-				"revenue": 4
+				"revenue": 4,
+				"transaction_id": String(transaction_id)
 			};
 			branch.logEvent(
 				"PURCHASE",
@@ -89,7 +95,7 @@
 			);
   			gtag('event', 'conversion', {
       			'send_to': 'AW-431159830/sdydCJShnYACEJb0y80B',
-      			'transaction_id': ''
+      			'transaction_id': String(transaction_id)
   			});
 			fbq('track', 'Purchase', {currency: "USD", value: 4.00});
 		};
